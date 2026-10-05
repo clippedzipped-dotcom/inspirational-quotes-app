@@ -1,27 +1,127 @@
 [
-  { "text": "The best time to plant a tree was twenty years ago. The second best time is now.", "author": "Chinese Proverb" },
-  { "text": "It always seems impossible until it's done.", "author": "Nelson Mandela" },
-  { "text": "The only way to do great work is to love what you do.", "author": "Steve Jobs" },
-  { "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.", "author": "Winston Churchill" },
-  { "text": "You miss one hundred percent of the shots you don't take.", "author": "Wayne Gretzky" },
-  { "text": "Whether you think you can or you think you can't, you're right.", "author": "Henry Ford" },
-  { "text": "The journey of a thousand miles begins with a single step.", "author": "Lao Tzu" },
-  { "text": "Fall seven times, stand up eight.", "author": "Japanese Proverb" },
-  { "text": "Everything you've ever wanted is on the other side of fear.", "author": "George Addair" },
-  { "text": "Discipline is choosing between what you want now and what you want most.", "author": "Abraham Lincoln" },
-  { "text": "Do not wait to strike till the iron is hot; but make it hot by striking.", "author": "William Butler Yeats" },
-  { "text": "The mind is everything. What you think you become.", "author": "Buddha" },
-  { "text": "In the middle of difficulty lies opportunity.", "author": "Albert Einstein" },
-  { "text": "Start where you are. Use what you have. Do what you can.", "author": "Arthur Ashe" },
-  { "text": "A ship in harbour is safe, but that is not what ships are built for.", "author": "John A. Shedd" },
-  { "text": "You are never too old to set another goal or to dream a new dream.", "author": "C.S. Lewis" },
-  { "text": "Action is the foundational key to all success.", "author": "Pablo Picasso" },
-  { "text": "The man who moves a mountain begins by carrying away small stones.", "author": "Confucius" },
-  { "text": "What we fear doing most is usually what we most need to do.", "author": "Tim Ferriss" },
-  { "text": "Courage is not the absence of fear, but the triumph over it.", "author": "Nelson Mandela" },
-  { "text": "Small daily improvements are the key to staggering long-term results.", "author": "Robin Sharma" },
-  { "text": "If you want to go fast, go alone. If you want to go far, go together.", "author": "African Proverb" },
-  { "text": "The future belongs to those who believe in the beauty of their dreams.", "author": "Eleanor Roosevelt" },
-  { "text": "Dream big and dare to fail.", "author": "Norman Vaughan" },
-  { "text": "Nothing in life is to be feared, it is only to be understood.", "author": "Marie Curie" }
+ {
+  "text": "Creativity is the key to success in the future, and primary education is where teachers can bring creativity in children at that level.",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "For success of any mission, it is necessary to have creative leadership. Creative leadership is vital for government, non-governmental organisations as well as for industries.",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "I firmly believe that unless one has tasted the bitter pill of failure, one cannot aspire enough for success.",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "Let us sacrifice our today so that our children can have a better tomorrow.",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "Man needs his difficulties because they are necessary to enjoy success.",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "Tell me, why is the media here so negative? Why are we in India so embarrassed to recognise our own strengths, our achievements? We are such a great nation. We have so many amazing success stories but we refuse to acknowledge them. Why?",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "The bird is powered by its own life and by its motivation.",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "Those who cannot work with their hearts achieve but a hollow, half-hearted success that breeds bitterness all around.",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "We should not give up and we should not allow the problem to defeat us.",
+  "author": "A. P. J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "Success comes to those who dedicate everything to their passion in life. To be successful, it is also very important to be humble and never let fame or money travel to your head.",
+  "author": "A. R. Rahman",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "Look at the sky. We are not alone. The whole universe is friendly to us and conspires only to give the best to those who dream and work.",
+  "author": "A.P.J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "Thinking should become your capital asset, no matter whatever ups and downs you come across in your life.",
+  "author": "A.P.J. Abdul Kalam",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "I saw a lot of people have success handed to them that then exploited it. They didn't protect it or cherish it.",
+  "author": "Aaron Paul",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "People will love you. People will hate you. And none of it will have anything to do with you.",
+  "author": "Abraham Hicks",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "Wonder rather than doubt is the root of all knowledge.",
+  "author": "Abraham Joshua Heschel",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "A house divided against itself cannot stand.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ },
+ {
+  "text": "Always bear in mind that your own resolution to succeed is more important than any one thing.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ },
+ {
+  "text": "Always bear in mind that your own resolution to succeed is more important than any other.",
+  "author": "Abraham Lincoln",
+  "source": "mubaris/motivate"
+ },
+ {
+  "text": "As our case is new, we must think and act anew.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ },
+ {
+  "text": "Be sure you put your feet in the right place, then stand firm.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ },
+ {
+  "text": "Character is like a tree and reputation like a shadow. The shadow is what we think of it; the tree is the real thing.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ },
+ {
+  "text": "Give me six hours to chop down a tree and I will spend the first four sharpening the axe.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ },
+ {
+  "text": "I destroy my enemies when I make them my friends.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ },
+ {
+  "text": "I walk slowly, but I never walk backward.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ },
+ {
+  "text": "I will prepare and some day my chance will come.",
+  "author": "Abraham Lincoln",
+  "source": "dwyl/quotes"
+ }
 ]
