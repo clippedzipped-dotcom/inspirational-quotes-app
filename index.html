@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='nl'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Inspirerende Quotes</title>
+<style>
+  :root{
+    --bg:#0a0a0f; --card:#14141f; --ink:#f4f4f8; --dim:#8b8ba0;
+    --accent:#c9a227; --accent2:#7c5cff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:
+      radial-gradient(900px 500px at 15% -10%, rgba(124,92,255,.22), transparent 60%),
+      radial-gradient(800px 500px at 95% 110%, rgba(201,162,39,.16), transparent 60%),
+      var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh; padding:24px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:100%;max-width:860px;text-align:center}
+  .kicker{
+    font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;margin-bottom:34px;
+  }
+  .quote-box{
+    min-height:260px;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;
+    transition:opacity .3s ease, transform .3s ease;
+  }
+  .quote-box.fade{opacity:0;transform:translateY(10px)}
+  .mark{font-size:4rem;line-height:0;color:var(--accent2);opacity:.55;margin-bottom:26px}
+  #quote{
+    font-size:clamp(1.6rem,4.4vw,2.9rem);
+    line-height:1.28;font-weight:600;letter-spacing:-.02em;
+    text-wrap:balance;
+  }
+  #author{
+    margin-top:26px;font-size:1rem;color:var(--dim);
+    letter-spacing:.06em;text-transform:uppercase;font-weight:500;
+  }
+  #author:before{content:'— '}
+  button{
+    margin-top:46px;padding:15px 40px;border:none;border-radius:999px;
+    background:linear-gradient(135deg,var(--accent2),#a78bfa);
+    color:#fff;font-size:1rem;font-weight:600;letter-spacing:.02em;
+    cursor:pointer;transition:transform .15s ease, box-shadow .25s ease, filter .2s ease;
+    box-shadow:0 8px 30px rgba(124,92,255,.35);
+  }
+  button:hover{transform:translateY(-2px);box-shadow:0 12px 38px rgba(124,92,255,.5)}
+  button:active{transform:translateY(0) scale(.98)}
+  button:disabled{filter:grayscale(.5) brightness(.7);cursor:wait;transform:none}
+  button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  footer{margin-top:40px;font-size:.78rem;color:#4d4d63}
+  footer span{color:var(--dim)}
+</style>
+</head>
+<body>
+<main class='wrap'>
+  <p class='kicker'>Daily Inspiration</p>
+
+  <div class='quote-box' id='box'>
+    <div class='mark'>&ldquo;</div>
+    <p id='quote'>Laden&hellip;</p>
+    <p id='author'></p>
+  </div>
+
+  <button id='next' type='button'>Volgende quote</button>
+
+  <footer>Gebouwd met <span>Gemini</span> &middot; gehost op <span>Railway</span> &middot; <span id='count'>&mdash;</span></footer>
+</main>
+
+<script>
+(function () {
+  var box = document.getElementById('box');
+  var quoteEl = document.getElementById('quote');
+  var authorEl = document.getElementById('author');
+  var countEl = document.getElementById('count');
+  var btn = document.getElementById('next');
+  var last = null;
+
+  function show(data) {
+    quoteEl.textContent = data.text;
+    authorEl.textContent = data.author;
+    if (data.total) countEl.textContent = data.total + ' quotes';
+    box.classList.remove('fade');
+  }
+
+  function loadRandom() {
+    btn.disabled = true;
+    box.classList.add('fade');
+    fetch('/api/quote', { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (data) {
+        if (data.text === last && data.total > 1) { return loadRandom(); }
+        last = data.text;
+        setTimeout(function () { show(data); btn.disabled = false; }, 300);
+      })
+      .catch(function () {
+        quoteEl.textContent = 'Kon geen quote laden.';
+        authorEl.textContent = '';
+        box.classList.remove('fade');
+        btn.disabled = false;
+      });
+  }
+
+  btn.addEventListener('click', loadRandom);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); if (!btn.disabled) loadRandom(); }
+  });
+  loadRandom();
+})();
+</script>
+</body>
+</html>
